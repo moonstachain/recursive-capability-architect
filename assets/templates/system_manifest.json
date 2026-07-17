@@ -1,0 +1,67 @@
+{
+  "schema": "recursive-capability-system-v1",
+  "system_id": "example-system",
+  "state_revision": 1,
+  "objective": "Improve a recurring operation under comparable cost",
+  "status": "baseline_building",
+  "maturity": "experimental_level_0",
+  "canonical_source": "system_manifest.json",
+  "roles": {
+    "producer": {
+      "owner": "domain-producer",
+      "decision_rights": ["plan", "execute", "deliver_candidate"]
+    },
+    "verifier": {
+      "owner": "independent-verifier",
+      "decision_rights": ["accept_current_artifact", "return_for_revision"]
+    },
+    "improver": {
+      "owner": "outcome-improver",
+      "decision_rights": ["propose_challenger", "evaluate_private_outcome", "recommend_promotion"]
+    },
+    "human_owner": {
+      "owner": "human",
+      "decision_rights": ["veto", "approve_governed_merge", "authorize_irreversible_action"]
+    }
+  },
+  "task_families": [
+    {"id": "family-a", "held_out": false},
+    {"id": "family-b", "held_out": true}
+  ],
+  "budget": {
+    "baseline": {
+      "human_minutes": 60,
+      "tool_cost": 10,
+      "sourcing_minutes": 20,
+      "compute_minutes": 30
+    },
+    "ceiling_ratio": 1.1
+  },
+  "observation": {
+    "minimum_hours": 168
+  },
+  "promotion_policy": {
+    "minimum_eligible_cases": 6,
+    "minimum_batches": 2,
+    "minimum_median_lift": 5,
+    "minimum_improved_ratio": 0.6666667,
+    "family_floor": -10,
+    "require_held_out_positive": true,
+    "require_human_approval": true
+  },
+  "visibility": {
+    "producer_visible": [
+      "system_manifest.public.json",
+      "capability_graph.json",
+      "trials/*/trial_manifest.json",
+      "trials/*/public_quality_record.json"
+    ],
+    "private": [
+      "private/outcomes/*",
+      "private/evaluator_config.json",
+      "promotion_receipt.json"
+    ]
+  },
+  "human_promotion_decision": "pending",
+  "derived_views": []
+}

@@ -1,0 +1,20 @@
+{
+  "schema": "recursive-capability-private-outcome-v1",
+  "trial_id": "trial-example",
+  "artifact_sha256": null,
+  "visibility": "private",
+  "observation_hours": 168,
+  "eligible": false,
+  "ineligible_reasons": ["outcome_not_available"],
+  "contamination": [],
+  "outcome_score": null,
+  "matched_baseline_score": null,
+  "outcome_lift": null,
+  "task_family": "family-a",
+  "batch_id": "batch-1",
+  "held_out": false,
+  "family_delta": null,
+  "budget_ratio": null,
+  "hard_redlines": [],
+  "metrics": {}
+}

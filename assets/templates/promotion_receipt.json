@@ -1,0 +1,13 @@
+{
+  "schema": "recursive-capability-promotion-receipt-v1",
+  "system_id": "example-system",
+  "generated_at": null,
+  "verdict": "insufficient_evidence",
+  "criteria": {},
+  "eligible_trial_ids": [],
+  "ineligible_trial_ids": [],
+  "human_decision": "pending",
+  "smallest_responsible_rule": null,
+  "rollback_version": null,
+  "production_modified": false
+}

@@ -1,0 +1,29 @@
+{
+  "schema": "zhiku_public_skill_mirror_v1",
+  "generated_projection": true,
+  "manual_edits_forbidden": true,
+  "canonical_id": "zk:skill:recursive-capability-architect",
+  "core_commit": "e7de99358b4f83f6678e30281c558bdacbb103b7",
+  "release_id": "zkr-c2aca8e3d2c1cc713de0",
+  "content_hash": "f627d577ebb6629444ca825127c1c532cbe6c96c165b22001cf6b2e0f35669a0",
+  "managed_files": [
+    "LICENSE",
+    "SKILL.md",
+    "agents/openai.yaml",
+    "assets/evals/evals.json",
+    "assets/templates/capability_graph.json",
+    "assets/templates/learning_receipt.json",
+    "assets/templates/private_outcome_record.json",
+    "assets/templates/promotion_receipt.json",
+    "assets/templates/public_quality_record.json",
+    "assets/templates/system_manifest.json",
+    "assets/templates/trial_manifest.json",
+    "governance/identity.json",
+    "references/evaluation_and_promotion.md",
+    "references/feedback_to_capability.md",
+    "references/methodology_provenance.md",
+    "references/three_loop_architecture.md",
+    "scripts/recursive_capability.py",
+    "scripts/self_test.py"
+  ]
+}

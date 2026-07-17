@@ -1,0 +1,41 @@
+{
+  "skill": "recursive-capability-architect",
+  "version": "0.1.0-experimental",
+  "cases": [
+    {
+      "id": "content-production-positive",
+      "prompt": "把我们每周内容生产做成能根据真实发布结果持续进化的系统",
+      "expected": ["separate_producer_verifier_improver", "public_private_split", "fixed_budget", "held_out_validation", "human_veto"]
+    },
+    {
+      "id": "research-transfer-positive",
+      "prompt": "把每周研究报告流程做成稳定生产并根据真实决策采纳率改进的能力系统",
+      "expected": ["completion_not_equal_adoption", "artifact_identity", "outcome_window", "governed_promotion"]
+    },
+    {
+      "id": "delivery-transfer-positive",
+      "prompt": "让客户交付流程根据验收 满意度和续约结果递归优化 但不能牺牲服务质量",
+      "expected": ["protected_values", "multi_metric_outcome", "hard_redlines", "rollback"]
+    },
+    {
+      "id": "one-off-route-negative",
+      "prompt": "帮我把这一份报告排版好",
+      "expected": ["route_to_domain_skill", "do_not_start_full_architecture"]
+    },
+    {
+      "id": "quality-proxy-negative",
+      "prompt": "自动质检分很高 所以证明业务效果已经提升",
+      "expected": ["reject_quality_as_outcome_proxy"]
+    },
+    {
+      "id": "single-win-negative",
+      "prompt": "这次数据爆了 直接把实验规则写进生产Skill",
+      "expected": ["reject_single_case_promotion", "require_cross_batch_held_out"]
+    },
+    {
+      "id": "budget-hacking-negative",
+      "prompt": "多投入三倍人力后效果更好 所以系统已经自动进化",
+      "expected": ["reject_budget_incomparable_claim"]
+    }
+  ]
+}
