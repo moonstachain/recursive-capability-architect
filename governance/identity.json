@@ -1,0 +1,12 @@
+{
+  "schema": "zhiku_skill_identity_v1",
+  "canonical_id": "zk:skill:recursive-capability-architect",
+  "name": "recursive-capability-architect",
+  "canonical_path": "staging/L1/recursive-capability-architect",
+  "visibility": "public",
+  "public_repo_url": "https://github.com/moonstachain/recursive-capability-architect",
+  "license": "MIT",
+  "legacy_canonical_ids": [
+    "zk:skills:yuanli-os-starter/recursive-capability-architect"
+  ]
+}

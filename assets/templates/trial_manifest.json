@@ -1,0 +1,30 @@
+{
+  "schema": "recursive-capability-trial-v1",
+  "trial_id": "trial-example",
+  "system_id": "example-system",
+  "batch_id": "batch-1",
+  "parent_batch_id": null,
+  "task_family": "family-a",
+  "held_out": false,
+  "incumbent_version": "1.0.0",
+  "challenger_version": "candidate-1",
+  "primary_variable": "one preregistered change",
+  "predicted_mechanism": "why the change should improve the real outcome",
+  "preregistered_at": null,
+  "published_at": null,
+  "parent_outcome_available_at": null,
+  "parent_selection_at": null,
+  "observation_hours": 168,
+  "artifact_sha256": null,
+  "completion_receipt_path": null,
+  "human_review": {
+    "status": "pending",
+    "artifact_sha256": null,
+    "receipt_path": null
+  },
+  "budget": {
+    "baseline": {"human_minutes": 60, "tool_cost": 10, "sourcing_minutes": 20, "compute_minutes": 30},
+    "actual": {"human_minutes": 0, "tool_cost": 0, "sourcing_minutes": 0, "compute_minutes": 0}
+  },
+  "status": "preregistered"
+}

@@ -1,0 +1,19 @@
+{
+  "schema": "recursive-capability-graph-v1",
+  "system_id": "example-system",
+  "nodes": [
+    {"id": "producer", "type": "controller", "owns": ["plan", "execute", "delivery_candidate"]},
+    {"id": "verifier", "type": "gate", "owns": ["current_artifact_acceptance", "human_experience_gate"]},
+    {"id": "improver", "type": "experiment", "owns": ["proposal", "private_evaluation", "selection_recommendation"]},
+    {"id": "human_owner", "type": "governance", "owns": ["veto", "merge_approval"]}
+  ],
+  "edges": [
+    {"from": "producer", "to": "verifier", "artifact": "delivery_candidate"},
+    {"from": "verifier", "to": "producer", "condition": "needs_revision"},
+    {"from": "verifier", "to": "improver", "artifact": "accepted_current_artifact"},
+    {"from": "improver", "to": "human_owner", "artifact": "promotion_receipt"},
+    {"from": "human_owner", "to": "producer", "condition": "approved_governed_merge"}
+  ],
+  "memory": ["learning_receipts", "rejection_ledger", "golden_cases", "counterexamples"],
+  "redlines": ["private_data_leak", "stale_artifact", "score_overrides_hard_failure", "automatic_production_merge"]
+}

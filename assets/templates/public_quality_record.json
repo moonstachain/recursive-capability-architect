@@ -1,0 +1,11 @@
+{
+  "schema": "recursive-capability-public-quality-v1",
+  "trial_id": "trial-example",
+  "artifact_sha256": null,
+  "current_version_verified": false,
+  "completion_status": "pending",
+  "machine_checks": [],
+  "human_experience_status": "pending",
+  "hard_redlines": [],
+  "return_path": null
+}

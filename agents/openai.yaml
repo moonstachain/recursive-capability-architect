@@ -1,0 +1,4 @@
+interface:
+  display_name: "递归能力系统架构师"
+  short_description: "把复杂重复业务设计成可验真 可进化 可回滚的三环能力系统"
+  default_prompt: "Use $recursive-capability-architect to turn this recurring complex operation into an evidence-governed Producer Verifier Improver system with explicit ownership visibility boundaries fixed budgets held-out validation human veto and governed promotion."
