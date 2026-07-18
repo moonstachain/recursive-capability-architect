@@ -1,11 +1,8 @@
 {
-  "schema": "zhiku_public_skill_mirror_v1",
-  "generated_projection": true,
-  "manual_edits_forbidden": true,
   "canonical_id": "zk:skill:recursive-capability-architect",
-  "core_commit": "cd74e46a8e3b8dc331b315a1dd873b793ac61b5f",
-  "release_id": "zkr-2f115c95a0bd7828a7a7",
   "content_hash": "f627d577ebb6629444ca825127c1c532cbe6c96c165b22001cf6b2e0f35669a0",
+  "core_commit": "c96b415be289545dff57adb7340e54e3fc60f029",
+  "generated_projection": true,
   "managed_files": [
     "LICENSE",
     "SKILL.md",
@@ -25,5 +22,8 @@
     "references/three_loop_architecture.md",
     "scripts/recursive_capability.py",
     "scripts/self_test.py"
-  ]
+  ],
+  "manual_edits_forbidden": true,
+  "release_id": "zkr-63f148dc4217d8fdf196",
+  "schema": "zhiku_public_skill_mirror_v1"
 }
